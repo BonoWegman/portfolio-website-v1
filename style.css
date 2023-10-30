@@ -1,0 +1,674 @@
+html {
+
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    zoom: 120%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'helvetica-mono';
+    src: url('helvetica-mono-Regular.eot');
+    src: url('helvetica-mono-Regular?#iefix') format('embedded-opentype'),
+        url('helvetica-mono-Regular.woff2') format('woff2'),
+        url('helvetica-mono-Regular.woff') format('woff'),
+        url('helvetica-mono-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+.body {
+
+    background-color:rgb(232, 244, 218);
+    padding: 10px 0 50px 10px;
+
+}
+
+.home-image-container {
+
+    margin:  50px 0 0 9vw;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: rotate(-2deg);
+
+
+}
+
+.project-image-container {
+
+    margin: 50px 0 0 23vw;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: rotate(-4deg);
+
+}
+
+
+
+
+
+.image-incontainer {
+
+    width: 119px;
+    height: auto;
+    padding: 0px;
+    margin: -5px 0 0 0;
+
+}
+
+.project-image-incontainer {
+
+    width: 450px;
+    height: auto;
+    padding: 0px;
+    margin: -3px 0 0 0;
+
+
+}
+
+.prints-image-incontainer {
+
+    width: 470px;
+    height: auto;
+    padding: 0px;
+    margin: -3px 0 0 -43px;
+
+}
+
+.sketches-image-incontainer {
+
+    width: 200px;
+    height: auto;
+    padding: 0px;
+    margin: -3px 0 0 0;
+
+
+}
+
+
+
+
+
+.bags-image-container {
+
+    margin: 50px 0 0 302px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: rotate(-1deg);
+
+}
+
+.ai-image-container {
+    margin: 50px 0 0 302px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: rotate(-1deg);
+
+}
+
+.headwear-image-container {
+
+    margin: 50px 0 0 302px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: rotate(-1deg);
+
+}
+
+.outwear-image-container {
+
+    margin: 50px 0 50px 302px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    transform: rotate(-1deg);
+
+}
+
+.prints-image-container {
+
+    margin: 50px 0 0 302px;
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: auto;
+    transform: rotate(-1deg);
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.sketches-image-container {
+
+    margin: 50px 0 0 302px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: auto;
+    transform: rotate(-1deg);
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+
+.body-prints {
+
+    background-color:rgb(232, 244, 218);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-2.png");
+    background-repeat: repeat;
+    background-size: 19px;
+
+
+}
+
+.body-intervention {
+
+    background-color:rgb(232, 244, 218);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-3.png");
+    background-repeat: repeat;
+    background-size: 13px;
+
+
+}
+
+.body-upcycling {
+
+    background-color:rgb(238, 226, 247);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-4.png");
+    background-repeat: repeat;
+    background-size: 7px;
+
+}
+
+.body-headwear {
+
+    background-color:rgb(236, 236, 236);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-15.png");
+    background-repeat: repeat;
+    background-size: 14px;
+
+}
+
+.body-sketches {
+
+    background-color:rgb(255, 255, 255);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-5.png");
+    background-repeat: repeat;
+    background-size: 9px;
+
+}
+
+.body-outwear {
+
+    background-color:rgb(218, 236, 244);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-18.png");
+    background-repeat: repeat;
+    background-size: 28px;
+
+}
+
+.body-bags {
+
+    background-color:rgb(237, 230, 221);
+    line-height: 1;
+    padding: 10px 0 50px 10px;
+    background-image: url("patterns/pattern-10.png");
+    background-repeat: repeat;
+    background-size: 7px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo-homepage{
+    width: 110px;
+    margin: 67px 0 0 23px;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.logo{
+    width: 110px;
+    margin: 67px 0 0 23px;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.back-button {
+
+    width: 71px;
+    margin: 7px 10px 0 7px;
+    position: fixed;
+    z-index: 100;
+    transform: rotate(270deg);
+}
+
+
+
+
+
+
+.project-title {
+
+    font-family: 'helvetica-mono';
+    font-size: 8pt;
+    color: rgb(86, 86, 86);
+    padding: 0px 0 0 0;
+    margin: 20px 0 0 92px;
+    position: fixed;
+    background-color: white;
+    border: dashed 1px rgb(86, 86, 86);
+    transform: rotate(5deg);
+    z-index: 999;
+    line-height: 9.2pt;
+}
+
+.project-description-box {
+    display: flex;
+    position: fixed;
+    flex-flow:column-reverse;
+    padding: 0 0 0 0;
+    margin: 91vh 0 0 30px;
+    z-index: 999;
+    width: 290px;
+}
+  
+.project-description-container {
+    align-self: end;
+    font-family: 'helvetica-mono';
+    font-size: 8pt;
+    color:rgb(86, 86, 86) ;
+    position: fixed;
+    background-color: white;
+    border: dashed 1px rgb(86, 86, 86);
+    width: 300px;
+    transform: rotate(-9deg);
+    z-index: 999;
+    line-height: 9.2pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+.artist-statement {
+
+    font-family: 'helvetica-mono';
+    font-size: 8pt;
+    color: rgb(86, 86, 86);
+    padding: 0px 0 0 0;
+    margin: 450px 0 0 32px;
+    position: fixed;
+    background-color: white;
+    border: dashed 1px rgb(86, 86, 86);
+    transform: rotate(3deg);
+    z-index: 999;
+    width: 82vw;
+    max-width: 288px;
+    line-height: 9.2pt;
+
+}
+
+.info {
+    
+    font-family: 'helvetica-mono';
+    font-size: 8pt;
+    color: rgb(86, 86, 86);
+    padding: 0px 0 0 0;
+    margin: 190px 0 0 32px;
+    position: fixed;
+    background-color: white;
+    border: dashed 1px rgb(86, 86, 86);
+    transform: rotate(-5deg);
+    z-index: 999;
+    width: 67vw;
+    max-width: 250px;
+    line-height: 9.2pt;
+
+}
+
+.link {
+
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+
+.link:hover {
+
+    color: red;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+
+
+
+    .home-image-container {
+
+        margin: 124px 0 0 24vw;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        transform: rotate(-2deg);
+    }
+
+    .project-image-container, .outwear-image-container, .bags-image-container, .ai-image-container, .headwear-image-container, .prints-image-container {
+
+        margin: 50px 0 0 5vw;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        transform: rotate(0deg) !important;
+    
+    }
+
+    .sketches-image-container {
+
+        margin: 200px 0 0 5vw;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        transform: rotate(0deg);
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+    }
+
+    
+
+
+
+
+    .project-image-incontainer {
+
+        width: 80vw;
+        height: auto;
+        padding: 0px;
+        margin: -3px 0 0 0;
+    
+    
+    }
+    
+    .prints-image-incontainer {
+    
+        width: 80vw;
+        height: auto;
+        padding: 0px;
+        margin: -3px 0 0 -43px;
+    
+    }
+    
+    .sketches-image-incontainer {
+    
+        width: 40vw;
+        height: auto;
+        padding: 0px;
+        margin: -3px 0 0 0;
+    
+    
+    }
+
+
+
+
+
+
+
+    .project-title {
+
+        font-family: 'helvetica-mono';
+        font-size: 8pt;
+        color: rgb(86, 86, 86);
+        padding: 0px 0 0 0;
+        margin: 131px 0 0 131px;
+        position: absolute;
+        background-color: white;
+        border: dashed 1px rgb(86, 86, 86);
+        transform: rotate(5deg);
+        z-index: 999;
+        line-height: 9.2pt;
+    }
+    
+    .project-description-box {
+
+        position: relative;
+        margin: 25vh 0 0 30px;
+        width: 80vw;
+        padding-bottom: 1px;
+        max-width: 312px;
+    }
+      
+    .project-description-container {
+        font-family: 'helvetica-mono';
+        font-size: 8pt;
+        color:rgb(86, 86, 86) ;
+        position: relative;
+        background-color: white;
+        border: dashed 1px rgb(86, 86, 86);
+        width: 80vw;
+        transform: rotate(-9deg);
+        z-index: 999;
+        line-height: 9.2pt;
+        max-width: 312px;
+    }
+
+
+
+
+    .logo{
+        width: 110px;
+        margin: 67px 0 0 23px;
+        position: absolute;
+        z-index: 100;
+    
+    }
+
+    .logo-homepage{
+        width: 110px;
+        margin: 67px 0 0 23px;
+        position: fixed;
+        z-index: 100;
+    
+    }
+
+
+
+
+
+}
