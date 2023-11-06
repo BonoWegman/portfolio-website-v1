@@ -188,7 +188,15 @@ q:after {
     width: 119px;
     height: auto;
     padding: 0px;
-    margin: -5px 0 0 0;
+    margin: -3px 0 0 0;
+
+}
+
+.image-incontainer:hover {
+
+    outline: 1px dashed  rgb(86, 86, 86);
+    outline-offset: -1px;
+    z-index: 999;
 
 }
 
@@ -406,14 +414,29 @@ q:after {
     margin: 67px 0 0 23px;
     position: fixed;
     z-index: 100;
+    transition: transform 0.3s;
+
+}
+
+.logo-homepage:hover{
+
+    transform: rotate(-8deg);
 
 }
 
 .logo{
+
     width: 110px;
     margin: 67px 0 0 23px;
     position: fixed;
     z-index: 100;
+    transition: transform 0.3s;
+
+}
+
+.logo:hover{
+
+    transform: rotate(-8deg);
 
 }
 
@@ -424,9 +447,14 @@ q:after {
     position: fixed;
     z-index: 100;
     transform: rotate(270deg);
+    transition: transform 0.3s;
 }
 
+.back-button:hover{
 
+    transform: rotate(262deg);
+
+}
 
 
 
@@ -499,7 +527,7 @@ q:after {
 }
 
 .info {
-    
+
     font-family: 'helvetica-mono';
     font-size: 8pt;
     color: rgb(86, 86, 86);
